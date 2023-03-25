@@ -8,4 +8,4 @@ RUN npm install
 
 EXPOSE 2020
 
-CMD ["node", "app.js"]
+CMD ["node", "index.js"]
