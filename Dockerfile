@@ -1,13 +1,11 @@
 FROM node:18.12.1
 
-RUN mkdir /app
+COPY . /src
 
-COPY . /app
-
-WORKDIR /app
+WORKDIR /src
 
 RUN npm install
 
 EXPOSE 2020
 
-CMD ["node", "index.js"]
+CMD ["node", "app.js"]
